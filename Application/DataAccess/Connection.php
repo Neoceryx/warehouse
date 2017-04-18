@@ -31,6 +31,8 @@ if( $Conn ) {
 
   // Get DataBase Info
   while ($result = sqlsrv_fetch_array($Stmt) ) {
+
+    // Display the info on the screen by Query position
     echo $result[0]." : ".$result[1]."<br>" ;
   }
 
