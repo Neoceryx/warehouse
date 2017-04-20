@@ -21,11 +21,11 @@ include 'Connection.php';
 
     // Display the info on the screen by Query position
     echo "
-    <div class='col s12 m12 l4 js_WareHouse'>
+    <div class='col s12 m12 l4 js_WareHouse' data-id='".$result[0]."'>
       <div class='card blue-grey'>
         <div class='card-content white-text'>
 
-          <span class='card-title'>WareHouse</span>
+          <span class='card-title'>".$result[1]."</span>
 
         </div>
       </div>
