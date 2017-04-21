@@ -13,10 +13,30 @@
       <div class="row">
 
         <div class="col s12 m4 l3 ">
-          a
+
+          <div>
+            <b>Articles total</b>
+            <div class="chip" id="js_Summary">Jane Doe</div>
+          </div>
+
         </div>
 
         <div class="col s12 m8 l9 ">
+
+          <form class="">
+            <div class="row">
+
+              <label>Browser Select</label>
+              <select class="browser-default" id="js_warehouses">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Jaula 1</option>
+                <option value="2">Jaula 2</option>
+                <option value="3">Jaula 3</option>
+              </select>
+
+            </div>
+          </form>
+
 
           <!-- Display DataBase info From Ajax call -->
           <div class="js_WareHouseResult row"></div>
