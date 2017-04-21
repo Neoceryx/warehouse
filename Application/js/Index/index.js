@@ -17,7 +17,7 @@ $(document).ready(function () {
         // Get the warehouse id clicked
         var WareHouseId = $(this).data("id");
 
-        console.log(WareHouseId);
+        alert(WareHouseId);
 
       });
       // End click
@@ -31,6 +31,29 @@ $(document).ready(function () {
   // End ajax
 
 
+  // Warehouses
+  $("#js_warehouses").change(function () {
+
+    var WareHouseId=$(this).val();
+
+    $.ajax({
+      type:"POST",
+      url:"DataAccess/GetWareHouseSummary.php",
+      data:{WRHOUSID:WareHouseId},
+      success:function (data) {
+
+        // Display DataBase Info On the DOM
+        $("#js_Summary").html(data);
+
+      },
+      error:function () {
+        alert("An Error Ocurred");
+      }
+
+    });
+    // End ajax
+
+  });
 
 });
 // End Scope
