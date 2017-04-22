@@ -4,7 +4,7 @@
 $Servername ="DAN\NEO";
 
 // Connection string
-$ConnInfo = array( "Database"=>"Warehouse", "UID"=>"", "PWD"=>"" );
+$ConnInfo = array( "Database"=>"Foo", "UID"=>"", "PWD"=>"" );
 
 $Conn = sqlsrv_connect($Servername, $ConnInfo);
 
